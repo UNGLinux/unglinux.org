@@ -1,0 +1,124 @@
+/* NAV BAR */
+body {
+    background-color:#202020;
+    font-family:Lato, sans-serif;
+    font-weight:lighter;
+    -webkit-font-smoothing: antialiased;
+}
+.yuno-navbar {
+    margin-bottom:0;
+    background-color:#262626;
+    box-shadow:0px 1px 0px #333333;
+}
+.yuno-navbar .navbar-brand {
+    line-height:0px;
+}
+.yuno-brand-icon {
+    height:20px;
+    width:68px;
+    background-size:68px 20px;
+    background-image:url(../images/tox.png);
+    display:inline-block;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .yuno-brand-icon {
+        background-image:url(../images/tox@2x.png);
+    }
+}
+.icon.twitter {
+    font-size:20px;
+    color:#005494!important;
+}
+.icon.twitter:hover {
+    color:#0e85eb!important;
+}
+.yuno-darken {
+    background-color:#202020;
+    color:#ffffff;
+    padding:0 20px;
+}
+.yuno-hero {
+    padding: 40px 15px;
+    text-align: center;
+}
+.yuno-hero-left {
+    text-align:left;
+}
+.yuno-hero > .yuno-centered {
+    margin:0 auto;
+}
+.yuno-darken > .yuno-hero > h1 {
+    color:#feb41c;
+}
+.yuno-greenish {
+    background-color:#4b6874;
+    color:#ffffff;
+    padding:0 20px;
+}
+.yuno-light {
+    background-color:#6c9bae;
+    color:#ffffff;
+}
+.yuno-display-only-if-js-enabled {
+    display:none;
+}
+.yuno-rotation-section-title {
+    margin:0 auto;
+    text-align:center;
+    padding-top:60px;
+    text-shadow:0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.yuno-rotation-backdrop {
+    background-position:center -600%;
+    background-repeat:no-repeat;
+    height:350px;
+    overflow:hidden;
+    width:100%;
+    position:absolute;
+    opacity:0;
+    transition:all 2s ease;
+}
+.yuno-rotation-backdrop.win {
+    background-image:url(../images/carousel-ss.png);
+}
+.yuno-rotation-backdrop.osx {
+    background-image:url(../images/carousel-ss-mac.png);
+}
+.yuno-rotation-backdrop.lin {
+    background-image:url(../images/carousel-ss-linux.png);
+}
+.yuno-rotation-item {
+    height:350px;
+}
+.yuno-rotation-item > .carousel-caption {
+    text-shadow:0px 2px 3px 5px #000;
+}
+.yuno-darker-greenish {
+    background-color:#3b4c5a;
+    color:#ffffff;
+    padding:0 20px;
+}
+.yuno-language-select {
+    text-align:left;
+    padding:20px;
+}
+.yuno-language-select > a {
+    color:#ffffff;
+}
+.yuno-muted-text {
+    color:#888888;
+}
+td {
+    text-align:left;
+}
+.yuno-feature-table-prog {
+    width:0%
+}
+.yuno-background-is-light {
+    color:#000000;
+    text-align:left;
+}
+.yuno-commit-panel {
+    height:300px;
+    overflow-y:scroll;
+}
