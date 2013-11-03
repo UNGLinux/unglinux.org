@@ -52,7 +52,7 @@ def recache_repo(cacheing_session, cache, name):
             "commit-message": co["commit"]["message"],
             "committer-is-author": co["author"]["login"] == co["committer"]["login"],
             "committer-name": co["committer"]["login"],
-            "_nsam-sortkey": dt.timestamp() if sys.version_info.major == 3 else (dt - datetime.datetime(1970, 1, 1)).total_seconds()
+            "_nsam-sortkey": time.time() if sys.version_info.major == 3 else (dt - datetime.datetime(1970, 1, 1)).total_seconds()
         })
 
 def main(args):
@@ -90,3 +90,4 @@ if __name__ == "__main__":
     parser.add_argument("repo", type=str, help="repositories to hit", nargs="*")
     a = parser.parse_args()
     main(a)
+

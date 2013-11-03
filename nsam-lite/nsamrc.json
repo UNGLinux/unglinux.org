@@ -1,7 +1,9 @@
 {
     "repositories": [
         {
-            "name": "UNGLinux/UNGKernel"
+            "name": "UNGLinux/UNGKernel",
+			"name": "UNGLinux/UNGWorld"
         }
     ]
 }
+
